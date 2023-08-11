@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhanad webpage</title>
+    <link rel="stylesheet" type="text/css" href="home1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<link rel="shortcut icon" type="image/png" href="favicon.png" >
+<body>
+ <div id="menu" class="fas fa-bars"></div>
+    <div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="Projects.html">Project</a>
+ </div>
+ <script>
+     const menu= document.getElementById('menu');
+     const navbar= document.getElementById('navbar');
+     menu.addEventListener('click', () =>{
+         menu.classList.toggle('fa-times');
+         navbar.classList.toggle('navbar-toggle');
+     })
+ </script>
+ <head>
+ <div class="section">
+     <div class="text">
+         <h2>Welcome to my website</h2>
+         <h2>اهلا وسهلا بك في موقع</h2>
+         <p>
+            This page is Home
+         </p>
+         <p>
+             هذه الصفحة هية الصفحة  الرئيسية
+         </p>
+         <p>
+             you can contact me from the navigation bar  on the top right corner
+         </p>
+         <p>
+            تستطيع مراسلتي عن طريق شريط التنقل في اعلى اليمين
+         </p>
+     </div>
+ </div>
+</head>
+</body>
+</html>

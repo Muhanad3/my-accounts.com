@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:100,200,300,400,500,600,700,800,900&display=swap');
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'poppins', sans-serif;
+}
+#menu {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    background-color: rgb(0, 81, 255);
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 27;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1.1);
+}
+#menu.fa-times{
+    transform: rotate(-180deg);
+}
+#navbar {
+    position: fixed;
+    top: 1.2rem;
+    right: 2.2rem;
+    border: 0.1rem solid rgb(0, 63, 199);
+    padding: 1rem 1.5rem 1rem 1rem;
+    border-radius: 1rem;
+    z-index: 4;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: top right;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1.1);
+}
+#navbar.navbar-toggle{
+    transform: scale(1);
+    opacity: 1;
+}
+#navbar a {
+    display: block;
+    padding: 0.5rem 7rem 0.5rem 1rem;
+    text-decoration: none;
+    color: rgb(141, 32, 32);
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+}
+#navbar a:hover {
+    color: rgb(141, 32, 32);
+    background-color: rgb(13, 2, 37);
+    transition: all 1s ease;
+}
+.button1{
+    display: inline-block;
+    background-image: linear-gradient(235deg,#0054b4 20%,#010615 50%,#369daa 30%);
+    outline: none;  
+    background-color: #000000;
+    border-radius: 2px;
+    border: 2px solid #222020;
+    color: rgba(255, 255, 255, 0.795);
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 3px 3px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    width: 100%;  
+}
+.button2 {
+    display: inline-block;
+    background-image: linear-gradient(235deg,#01254e 20%,#010615 50%,#050763 30%);
+    outline: none;  
+    background-color: #000000;
+    border-radius: 2px;
+    border: 2px solid #222020;
+    color: rgba(255, 255, 255, 0.795);
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 3px 3px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    width: 100%;  
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #010615;
+}
+.box
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    transition: 0.5s;
+    background: #060c21;
+}
+.box:hover
+{
+    height: 400px;
+}
+.box .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.box .imgBx img
+{
+    max-width: 100%;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+.box:hover .imgBx img
+{
+    opacity: 1;
+}
+.box:before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+.box:after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+.box:before,
+.box:after
+{
+    background: linear-gradient(235deg,#00fff2,#010615,#0019f8);
+}
+.box .content
+{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.box:hover .content
+{
+    opacity: 1;
+}
+.box .content h2
+{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.box .content h2 span
+{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;    
+}
